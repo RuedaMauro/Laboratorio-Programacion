@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Fcalculator.c"
+#include "Fcalculator.h"
 
 int main()
 {
