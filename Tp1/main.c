@@ -21,12 +21,13 @@ int main()
 
         if(opcion!=6)
         {
-        printf("Ingrese el primer operador: "); // mensaje que va a recibir el usuario para ingresar el primer operador
-        scanf("%f", &primerOperadorIngresado); // guardo el primer operador
+            printf("Ingrese el primer operador: "); // mensaje que va a recibir el usuario para ingresar el primer operador
+            scanf("%f", &primerOperadorIngresado); // guardo el primer operador
 
-        printf("Ingrese el segundo operador: "); // segundo mensaje que recibe el usuario para ingresar el segundo operador
-        scanf("%f", &segundoOperadorIngresado); // guardo el segundo operador
+            printf("Ingrese el segundo operador: "); // segundo mensaje que recibe el usuario para ingresar el segundo operador
+            scanf("%f", &segundoOperadorIngresado); // guardo el segundo operador
         }
+
         switch(opcion)
         {
             case 1:
@@ -42,7 +43,9 @@ int main()
                 division = divisionDeOperadores(primerOperadorIngresado, segundoOperadorIngresado);
             break;
             case 5:
+                printf("El factorial de A)%2.f", primerOperadorIngresado);
                 factorial = factorialPrimerNumero(primerOperadorIngresado);
+                printf("El factorial de B)%2.f", segundoOperadorIngresado);
                 factorial = factorialPrimerNumero(segundoOperadorIngresado);
                 break;
             case 6:

@@ -3,10 +3,10 @@
 float sumaDeOperadores(float primerOperador, float segundoOperador) // funcion para sumar los operadores
 {
     float suma;
-    
+
     suma  = primerOperador + segundoOperador;
-    
-    printf("La suma es:%.2f \n", suma);
+
+    printf("(%.2f+%.2f=%2.f)\n", primerOperador, segundoOperador,suma);
     return suma;
 }
 
@@ -14,40 +14,53 @@ float restaDeOperadores(float primerOperador, float segundoOperador) // funcion 
 {
     float resta;
     resta = primerOperador - segundoOperador;
-    
-    printf("El resultado de la resta es:%.2f \n", resta);
+
+    printf("(%.2f - %.2f)=%.2f\n", primerOperador, segundoOperador, resta);
+
     return resta;
 }
 
 float divisionDeOperadores(int primerOperador, float segundoOperador) // funcion para dividir los operadores
 {
     float division;
-    division = primerOperador / segundoOperador;
-    
-    printf("El resultado de la division es:%.2f \n", division);
-    return division;
+
+    if(primerOperador==0 || segundoOperador==0)
+    {
+        printf("No es posible dividir por 0 \n");
+    }
+    else
+    {
+        division = primerOperador / segundoOperador;
+
+        printf("(%d/%.2f)=%.2f\n", primerOperador, segundoOperador, division);
+
+        return division;
+    }
+
 }
 
 int multiplicacionDeOperadores(int primerOperador, int segundoOperador) // funcion para multiplicar los operadores
 {
     int multiplicacion;
     multiplicacion = primerOperador * segundoOperador;
-    
-    printf("El resultado de la multiplicacion es:%d \n", multiplicacion);
+
+    printf("(%d*%d)=%d\n", primerOperador, segundoOperador, multiplicacion);
+
     return multiplicacion;
 }
 int factorialPrimerNumero(int primerOperador) // funcion para obtener el factorial de los operadores
 {
     int producto;
-    
+
     producto=1;
-    
+
     while(primerOperador >1)
     {
         producto*=primerOperador;
         primerOperador--;
     }
-    printf("El resultado del factorial es:%d \n", producto);
+
+    printf(" es:%d \n", producto);
 
     return producto;
 }
