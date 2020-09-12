@@ -1,5 +1,5 @@
 /*1 Enunciado
-Hacer una calculadora. Para ello el programa iniciará y contará con un menú de opciones:
+Hacer una calculadora. Para ello el programa iniciarÃ¡ y contarÃ¡ con un menÃº de opciones:
 1. Ingresar 1er operando (A=x)
 2. Ingresar 2do operando (B=y)
 3. Calcular todas las operaciones
@@ -9,11 +9,11 @@ c) Calcular la division (A/B)
 d) Calcular la multiplicacion (A*B)
 e) Calcular el factorial (A!)
 4. Informar resultados
-a) “El resultado de A+B es: r”
-b) “El resultado de A-B es: r”
-c) “El resultado de A/B es: r” o “No es posible dividir por cero”
-d) “El resultado de A*B es: r”
-e) “El factorial de A es: r1 y El factorial de B es: r2”
+a) â€œEl resultado de A+B es: râ€
+b) â€œEl resultado de A-B es: râ€
+c) â€œEl resultado de A/B es: râ€ o â€œNo es posible dividir por ceroâ€
+d) â€œEl resultado de A*B es: râ€
+e) â€œEl factorial de A es: r1 y El factorial de B es: r2â€
 5. Salir
 */
 
@@ -42,7 +42,7 @@ int main()
     {   printf(".-------------------------------------------------.\n");
         printf("|                 CALCULADORA    (9-.-)9          |\n");
         printf(".-------------------------------------------------.\n");
-        printf("°°°°°°°°°°°°°°°°°°°°°MENU°°°°°°°°°°°°°°°°°°°°°°°°°°\n");
+        printf("Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°MENUÂ°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°\n");
         printf(".-------------------------------------------------.\n");
 
         printf("1) Ingrese el primer operando (A=x)\n2) Ingrese el segundo operando (B=y)\n3) Calcular todas las operaciones\n4) Informar resultados\n5) Salir.\n");
@@ -87,11 +87,20 @@ int main()
         {
             banderaResultados=0;
 
-            printf("El resultado de (%.2f+%.2f) es %2.f\n", primerOperandoIngresado, segundoOperandoIngresado,suma);
-            printf("El resultado de (%.2f - %.2f) es %.2f\n", primerOperandoIngresado, segundoOperandoIngresado, resta);
-            printf("El resultado de (%.2f/%.2f) es %.2f\n", primerOperandoIngresado, segundoOperandoIngresado, division);
-            printf("El resultado de (%.2f*%.2f) es %d\n", primerOperandoIngresado, segundoOperandoIngresado, multiplicacion);
-            printf("El factorial de (%.2f) es: %d ,El factorial de (%.2f) es:%d \n", primerOperandoIngresado, factorial, segundoOperandoIngresado, factorialNumeroDos);
+            printf("a)El resultado de (%.2f+%.2f) es %2.f\n", primerOperandoIngresado, segundoOperandoIngresado,suma);
+            printf("b)El resultado de (%.2f - %.2f) es %.2f\n", primerOperandoIngresado, segundoOperandoIngresado, resta);
+
+            if(primerOperandoIngresado==0||segundoOperandoIngresado==0)
+            {
+                printf("No se puede dividir por 0\n");
+            }
+            else
+            {
+                printf("c)El resultado de (%.2f/%.2f) es %.2f\n", primerOperandoIngresado, segundoOperandoIngresado, division);
+            }
+
+            printf("d)El resultado de (%.2f*%.2f) es %d\n", primerOperandoIngresado, segundoOperandoIngresado, multiplicacion);
+            printf("e)El factorial de (%.2f) es: %d ,El factorial de (%.2f) es:%d \n", primerOperandoIngresado, factorial, segundoOperandoIngresado, factorialNumeroDos);
 
         }
     }while(opcion!=5);
