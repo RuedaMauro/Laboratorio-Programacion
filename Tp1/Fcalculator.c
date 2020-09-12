@@ -6,20 +6,18 @@ float sumaDeOperadores(float primerOperador, float segundoOperador) // funcion p
 
     suma  = primerOperador + segundoOperador;
 
-    printf("(%.2f+%.2f=%2.f)\n", primerOperador, segundoOperador,suma);
+    printf("(%.2f+%.2f) es %2.f\n", primerOperador, segundoOperador,suma);
     return suma;
 }
-
 float restaDeOperadores(float primerOperador, float segundoOperador) // funcion para restar los operadores
 {
     float resta;
     resta = primerOperador - segundoOperador;
 
-    printf("(%.2f - %.2f)=%.2f\n", primerOperador, segundoOperador, resta);
+    printf("(%.2f - %.2f) es %.2f\n", primerOperador, segundoOperador, resta);
 
     return resta;
 }
-
 float divisionDeOperadores(int primerOperador, float segundoOperador) // funcion para dividir los operadores
 {
     float division;
@@ -32,7 +30,7 @@ float divisionDeOperadores(int primerOperador, float segundoOperador) // funcion
     {
         division = primerOperador / segundoOperador;
 
-        printf("(%d/%.2f)=%.2f\n", primerOperador, segundoOperador, division);
+        printf("(%d/%.2f) es %.2f\n", primerOperador, segundoOperador, division);
 
         return division;
     }
@@ -44,7 +42,7 @@ int multiplicacionDeOperadores(int primerOperador, int segundoOperador) // funci
     int multiplicacion;
     multiplicacion = primerOperador * segundoOperador;
 
-    printf("(%d*%d)=%d\n", primerOperador, segundoOperador, multiplicacion);
+    printf("(%d*%d) es %d\n", primerOperador, segundoOperador, multiplicacion);
 
     return multiplicacion;
 }
