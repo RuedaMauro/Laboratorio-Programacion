@@ -18,16 +18,9 @@ float divisionDeOperandos(int primerOperando, float segundoOperando) // funcion 
 {
     float division;
 
-    if(primerOperando==0 || segundoOperando==0)
-    {
-        printf("No se puede dividir por 0\n");
-    }
-    else
-    {
-        division = primerOperando / segundoOperando;
+    division = primerOperando / segundoOperando;
 
-        return division;
-    }
+     return division;
 
 }
 
