@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1603682397 source:c:\users\mauro\onedrive\escritorio\plab\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"libreriamascotas.h"
+	"libreriaedos.h"
+
+1603683081 source:c:\users\mauro\onedrive\escritorio\plab\libreriamascotas.c
+	"libreriamascotas.h"
+
+1603422053 c:\users\mauro\onedrive\escritorio\plab\libreriamascotas.h
+	<stdio.h>
+
+1603405946 c:\users\mauro\onedrive\escritorio\plab\libreriaedos.h
+	<stdio.h>
+
+1603683804 source:c:\users\mauro\onedrive\escritorio\plab\libreriaedos.c
+	"libreriamascotas.h"
+

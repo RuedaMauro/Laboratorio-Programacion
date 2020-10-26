@@ -1,0 +1,44 @@
+Soy un veterinario que necesita atender a las mascotas de sus clientes, para tener el
+control vamos a tener un sistema ....el sistema debe realizar las siguientes
+funcionalidades.(los datos deben ser hardcodeados).
+******************************** 1era parte
+#-Tenemos un listado de mascotas(nombre,edad,sexo{f o m},tipo{gato ,perro o raro})
+tenemos por ahora 5 mascotas ​pero tengo lugar para 10.
+#Tenemos un listado de razas(descripción,tamaño{chico ,mediano o grande},país de
+origen)
+listado de razas para hardcodear :
+a-siames, chico,tailandia
+b- doberman ,grande,alemania
+c- persa,mediano,persia
+d-pastor belga, grande, bélgica
+las 5 mascotas están formadas por los siguientes datos:
+a- 3 gatos
+b- 2 perros
+c- los demás datos deben ser hardcodeados por el alumno.
+1-Se debe mostrar un listado de mascotas con sus razas y países de origen
+
+
+Soy un veterinario que necesita atender a las mascotas de sus clientes, para tener el
+control vamos a tener un sistema ....el sistema debe realizar las siguientes
+funcionalidades.(los datos deben ser hardcodeados).
+******************************** 1era parte
+#-Tenemos un listado de mascotas(nombre,edad,sexo{f o m},tipo{gato ,perro o raro})
+tenemos por ahora 5 mascotas ​pero tengo lugar para 10.
+#Tenemos un listado de razas(descripción,tamaño{chico ,mediano o grande},país de
+origen)
+listado de razas para hardcodear :
+a-siames, chico,tailandia
+b- doberman ,grande,alemania
+c- persa,mediano,persia
+d-pastor belga, grande, bélgica
+las 5 mascotas están formadas por los siguientes datos:
+a- 3 gatos
+b- 2 perros
+c- los demás datos deben ser hardcodeados por el alumno.
+1-Se debe mostrar un listado de mascotas con sus razas y países de origen .
+
+******************************** 2da parte
+#-Alta de mascota, se pueden cargar todos los datos y se debe mostrar el listado de
+razas disponibles, teniendo en cuenta que ya tengo 5 mascotas cargadas y que el
+máximo es 10
+#-Se debe mostrar un listado de RAZAS con las mascotas que pertenecen a esa
