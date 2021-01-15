@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1608043111 source:c:\users\mauro\onedrive\escritorio\trabajopracticodos\libreriatpdos.c
+	"libcharset.h"
+
+1608658616 source:c:\users\mauro\onedrive\escritorio\trabajopracticodos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1608659033 c:\users\mauro\onedrive\escritorio\trabajopracticodos\arrayemployees.h
+	<stdio.h>
+
+1608659033 source:c:\users\mauro\onedrive\escritorio\trabajopracticodos\arrayemployees.c
+	"ArrayEmployees.h"
+	<string.h>
+
