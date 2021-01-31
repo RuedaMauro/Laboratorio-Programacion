@@ -1,0 +1,57 @@
+no
+
+
+   fopen("Lista de Empleados.txt", "w")----> escribimos en el archivo
+
+   fprintf("Lee el archivo linea por linea")
+
+   fscanf("Permite separar cadena de texto atravez de un limitador, recibe el puntero archivo va a recibir una mascara
+   "[^,]lee hasta la coma, "[^\n]guarda el nombre despues de un barra n \n!
+	
+   variable = atoi(variable) convierte una cadena a entero misma funcion que parseInt
+
+   CONTROLLER sive de entermediario main parser employee
+
+struct node
+{
+   void* pElement 
+
+   esta vacio porque asi podemos crear cualquier tipo de dato que quieramos, estructura, es algo generico
+   que nos permita guardar cualquier cosa, lista de empleados, mascotas , etc
+   
+}
+
+Memoria dinamica repasar
+
+LinkedList realiza un malloc es un constructor
+
+Constructor, implementamos la funcion malloc, espacio en memoria head
+
+ll_len : longitud, devuelve la cantidad de elementos que tengo en la lista, devuelve la cantidad de elementos
+que tenga la estructura, devuelve el size
+
+ll_get : trae un elemento posicion del elemento 
+
+ll_clear: limpia la lista
+
+ll_indexOf: le paso un empleado e indica en que posicion esta esa direccion de memoria 
+
+ll_empty: Necesito saber si la lista esta vacio o llena
+
+ll_sort: Ordena la lista por algun criterio
+
+ll_set: remplaza un elemento por otro
+
+ll_push: Mete entre dos elemento otro, se cola
+
+ll_pop: Saca un elemento de la lista y si quiero agregar a otra lista
+
+ll_contains: nos indica si en la lista hay un elemento en particular
+
+ll_containsAll: si la segunda lista esta en la primera
+
+ll_subList: Me devuelve una lista desde hasta ej(lista desde la poscicion 30 hasta la 60)
+
+ll_clone: copia todos los datos en una lista nueva
+
+me dio una curiosidad curiosamente curiosa
