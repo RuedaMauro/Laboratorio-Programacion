@@ -24,89 +24,119 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
 }
 int employee_setId(Employee* this,int id)
 {
-    int setId=0;
+    int retorno=0;
 
     if(this!=NULL && id>0){
-    this->id=id;
-    setId=1;
+        this->id=id;
+        retorno=1;
     }
-    return setId;
+    return retorno;
 }
 int employee_getId(Employee* this,int* id)
 {
-    int getId=0;
+    int retorno=0;
 
     if(this!=NULL && id!=NULL){
         *id = this->id;
-        getId=1;
+        retorno=1;
     }
-    return getId;
+    return retorno;
 }
 int employee_setNombre(Employee* this,char* nombre)
 {
-    int setNombre=0;
+    int retorno=0;
 
     if(this!=NULL){
         strcpy(this->nombre,nombre);
-        setNombre=1;
+        retorno=1;
     }
-    return setNombre;
+    return retorno;
 }
 int employee_getNombre(Employee* this,char* nombre)
 {
-    int getNombre=0;
+    int retorno=0;
 
     if(this!=NULL && nombre!=NULL){
         strcpy(nombre,this->nombre);
-        getNombre=1;
+        retorno=1;
     }
-    return getNombre;
+    return retorno;
 }
 int employee_setHorasTrabajadas(Employee* this,int horasTrabajadas)
 {
-    int setHorasTrabajadas=0;
+    int retorno=0;
 
     if(this!=NULL && horasTrabajadas > 0){
         this->horasTrabajadas=horasTrabajadas;
-        setHorasTrabajadas=1;
+        retorno=1;
     }
-    return setHorasTrabajadas;
+    return retorno;
 }
 int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas)
 {
-    int getHorasTrabajadas=0;
+    int retorno=0;
 
     if(this!=NULL && horasTrabajadas!=NULL){
         *horasTrabajadas=this->horasTrabajadas;
-        getHorasTrabajadas=1;
+        retorno=1;
     }
-    return getHorasTrabajadas;
+    return retorno;
 }
 int employee_setSueldo(Employee* this,int sueldo)
 {
-    int setSueldo=0;
+    int retorno=0;
 
     if(this!=NULL && sueldo>0){
         this->sueldo = sueldo;
-        setSueldo=1;
+        retorno=1;
     }
-    return setSueldo;
+    return retorno;
 }
 int employee_getSueldo(Employee* this,int* sueldo)
 {
-    int getSueldo=0;
+    int retorno=0;
 
     if(this!=NULL && sueldo!=NULL){
         *sueldo=this->sueldo;
-        getSueldo=1;
+        retorno=1;
     }
-    return getSueldo;
+    return retorno;
 }
-int employee_CompareByName(Employee* e1, Employee* e2)
+int employee_CompareByName(void* e1, void* e2)
 {
+    char employee1[51];
+    char employee2[51];
+    int compare;
+    if(e1!=NULL&&e2!=NULL){
+        employee_getNombre(e1,employee1);
+        employee_getNombre(e2,employee2);
 
+        compare=strcmp(employee1,employee2);
+
+    }
+    return compare;
 }
-int employee_CompareById(Employee* e1, Employee* e2)
+int employee_CompareById(void* e1, void* e2)
 {
+    Employee* employee1;
+    Employee* employee2;
+    int auxId1;
+    int auxId2;
+    int estado;
 
+    employee1=(Employee*)e1;
+    employee2=(Employee*)e2;
+
+    if(employee1!=NULL && employee2!=NULL){
+        employee_getId(e1,&auxId1);
+        employee_getId(e2,&auxId2);
+        if(employee1>employee2){
+            estado=1;
+        }else if(employee1==employee2){
+            estado=0;
+        }else{
+            estado=-1;
+        }
+    }
+    return estado;
 }
