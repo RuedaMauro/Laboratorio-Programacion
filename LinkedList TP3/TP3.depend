@@ -243,21 +243,22 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1613648663 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\controller.c
+1613749858 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\controller.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"LinkedList.h"
 	"Employee.h"
 	"parser.h"
+	"Controller.h"
 
-1613652593 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\linkedlist.h
+1613742349 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\linkedlist.h
 
-1613675110 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\employee.h
+1613759923 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\employee.h
 
 1613648662 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\parser.h
 
-1613671760 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\main.c
+1613759805 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -266,9 +267,14 @@
 
 1613648663 c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\controller.h
 
-1613648662 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\parser.c
+1613759433 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
+
+1613675087 source:c:\users\mauro\onedrive\escritorio\c\laboratorio-programacion\linkedlist tp3\employee.c
+	<stdlib.h>
+	"Employee.h"
+	<string.h>
 

@@ -140,3 +140,33 @@ int employee_CompareById(void* e1, void* e2)
     }
     return estado;
 }
+
+int employee_CompareBySalary(void* e1, void* e2)
+{
+    int compare=0;
+    Employee* empleado1;
+    Employee* empleado2;
+    int auxSueldo1;
+    int auxSueldo2;
+
+    empleado1=(Employee*)e1;
+    empleado2=(Employee*)e2;
+
+    employee_getSueldo(empleado1,&auxSueldo1);
+    employee_getSueldo(empleado2,&auxSueldo2);
+
+
+    if(auxSueldo1>auxSueldo2)
+    {
+        compare=1;
+
+    }else
+    {
+        if(auxSueldo1<auxSueldo2)
+        {
+            compare=-1;
+        }
+    }
+
+    return compare;
+}
